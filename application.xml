@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+	<!-- NMML reference: https://gist.github.com/1763850 -->
+	
+	<!-- metadata, make sure 'package' is at least 3 segments (ie. com.mycompany.myproject) -->
+	<meta title="TestGesture" package="com.fugo.gesture.TestGesture" version="1.0.0" company="Fugo" />
+	
+	<!-- output -->
+	<app main="com.fugo.gesture.Main" file="TestGesture" path="bin" />
+	
+	<window background="#fffffff" fps="60" />
+	<window width="800" height="480" unless="mobile" />
+	<window orientation="landscape" vsync="false" antialiasing="0" if="cpp" />
+	
+	<!-- classpath, haxe libs -->
+	<source path="src" />
+	<haxelib name="openfl" />
+	<haxelib name="actuate" />
+	<haxelib name="openfl-compatibility"/>
+	<!-- assets -->
+	<icon path="assets/openfl.svg" />
+	<assets path="assets/img" rename="img" />
+	
+	<!-- optimize output -->
+	<haxeflag name="-dce std" if="haxe3" />
+	
+</project>
