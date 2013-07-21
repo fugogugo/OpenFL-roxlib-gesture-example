@@ -89,7 +89,7 @@ class Main extends Sprite
 		Actuate.tween(sp, 0.5, { scaleX: scX + 0.1, scaleY:scY + 0.1 } ).ease(Bounce.easeOut);
 	}
 	
-	//when on long press, 
+	//when on long press, downsize the sprite
 	private function onLongPress(e:RoxGestureEvent):Void
 	{
 		

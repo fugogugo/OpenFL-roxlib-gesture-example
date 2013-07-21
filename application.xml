@@ -24,4 +24,5 @@
 	<!-- optimize output -->
 	<haxeflag name="-dce std" if="haxe3" />
 	
+	<certificate path="key/testgesture.keystore" password="fugogugo" alias="fugogugo" alias-password="fugogugo" />
 </project>
